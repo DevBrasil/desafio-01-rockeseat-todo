@@ -11,9 +11,7 @@ interface Task {
 }
 
 export function Home() {
-  const [tasks, setTasks] = useState<Task[]>([
-    { id: 1, title: "teste", done: true },
-  ]);
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   function handleAddTask(newTaskTitle: string) {
     if (newTaskTitle == "") {

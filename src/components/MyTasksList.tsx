@@ -44,10 +44,7 @@ export function MyTasksList({ tasks, onLongPress, onPress }: MyTasksListProps) {
               testID={`marker-${index}`}
               style={item.done ? styles.taskMarkerDone : styles.taskMarker}
             />
-            <Text
-              //TODO - use style prop
-              style={item.done ? styles.taskTextDone : styles.taskText}
-            >
+            <Text style={item.done ? styles.taskTextDone : styles.taskText}>
               {item.title}
             </Text>
           </TouchableOpacity>
